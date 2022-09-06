@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            font-size: 1em;
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        thead tr {
+            background-color: green;
+        }
+
+        tbody tr {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        tbody tr:nth-child(odd) {
+            background: darkgrey;
+        }
+
+        tbody tr:hover {
+            background: sienna;
+        }
+
+        .x {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Departman</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="x">Zübeyir
+                </td>
+                <td>Bilişim</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td class="x">Süleyman</td>
+                <td>Bilişim</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td class="x">Fatih</td>
+                <td>Bilişim</td>
+                <td>15000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
