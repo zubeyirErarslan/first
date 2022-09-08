@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        span {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            position: relative;
+            left: 25px;
+            z-index: -1;
+        }
+
+        .box1 {
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed;
+            right: 10px;
+        }
+
+        .outer-box {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: relative;
+        }
+
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            right: 10px;
+            bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div><br><br><br>
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div><br><br><br>
+    <span></span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fuga!
+</body>
+
+</html>
